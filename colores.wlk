@@ -18,3 +18,7 @@ object celeste {
 object pardo {
   method esColorFuerte() = false
 }
+
+object naranja {
+  method esColorFuerte() = true
+}

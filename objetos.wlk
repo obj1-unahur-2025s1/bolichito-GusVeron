@@ -48,3 +48,38 @@ object placa {
      peso = nuevoPeso
   }
 }
+
+object arito {
+  method material() = cobre
+  method color() = celeste
+  method peso() = 180
+}
+
+object banquito {
+
+  var color = naranja
+
+  method material() = madera
+  method color() = color
+  method peso() = 1700
+
+  method cambiarColor(unColor) {
+     color = unColor
+  }
+}
+
+object cajita {
+
+  var objetoAdentro = banquito
+  var peso = 400 + objetoAdentro.peso()
+
+  method material() = cobre
+  method color() = rojo
+  method peso() = peso
+
+  method objetoAdentro() = objetoAdentro
+  method objetoAdentro(nuevoObjeto) {
+    objetoAdentro = nuevoObjeto
+    peso = 400 + nuevoObjeto.peso()
+  }
+}
